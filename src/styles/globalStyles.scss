@@ -1,0 +1,70 @@
+@import './fonts.scss';
+@import './colors.scss';
+
+body {
+  margin: 0;
+  background-color: $backgroudGray-secundary;
+  font-family: $fontKarla-primary;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $fontKarla-primary;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+html {
+  font-family: $fontKarla-primary;
+}
+li {
+  list-style: none;
+}
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+@media (min-width: 1980px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media (max-width: 1800px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media (max-width: 1500px) {
+  html {
+    font-size: 80%;
+  }
+}
+@media (max-width: 1300px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media (max-width: 1000px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 700px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 30%;
+  }
+}
+@media (max-width: 200px) {
+  html {
+    font-size: 20%;
+  }
+}

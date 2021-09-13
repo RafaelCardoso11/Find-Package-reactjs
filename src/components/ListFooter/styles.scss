@@ -1,0 +1,30 @@
+@import '../../styles/fonts.scss';
+@import '../../styles/colors.scss';
+
+.column-items {
+  .title-columnItems {
+    margin: 0;
+    padding-bottom: 20px;
+    font-family: $fontKarla-primary;
+    font-size: 1rem;
+    color: $colorGray-primary;
+  }
+  .row-item {
+    display: flex;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .item {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    span {
+      font-family: $fontKarla-primary;
+      font-weight: 600;
+      color: $colorGray-secundary;
+    }
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}

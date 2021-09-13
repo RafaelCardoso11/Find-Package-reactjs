@@ -1,0 +1,52 @@
+@import '../../styles/fonts.scss';
+@import '../../styles/colors.scss';
+
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .modal-content {
+    width: 30vw;
+    background-color: $backgroudGray-primary;
+    min-height: 30rem;
+    padding: 5rem;
+    border-radius: 3px;
+    box-shadow: 0px 1px 2px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .container-headerModal {
+      height: 100%;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .logo {
+        width: 15rem;
+        margin-bottom: 20px;
+      }
+    }
+    .email {
+      margin-bottom: 10px;
+    }
+    .password {
+      margin-bottom: 10px;
+    }
+    .btn-login {
+      margin: 10px 0;
+    }
+    .forgotPassword {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  }
+}
+@media (max-width: 700px) {
+  .modal-container {
+    .modal-content {
+      width: 50vw;
+    }
+  }
+}

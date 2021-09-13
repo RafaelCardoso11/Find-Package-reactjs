@@ -1,0 +1,97 @@
+@import '../../styles/fonts.scss';
+@import '../../styles/colors.scss';
+
+.container-app {
+  display: grid;
+  grid-template-areas:
+  'text'
+  'img';
+  height: 100vh;
+  margin: 50px 0px;
+  padding: 50px;
+  position: relative;
+  overflow: hidden;
+  .container-text {
+    margin-top: 20px;
+    padding: 16px;
+    .label-title {
+      letter-spacing: 3px;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      font-family: $fontKarla-primary;
+    }
+    .title {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      font-family: $fontKarla-primary;
+    }
+    .body {
+      font-size: 1.4rem;
+      margin-bottom: 30px;
+      font-family: $fontKarla-primary;
+    }
+  }
+  .container-smartphone {
+    display: flex;
+    img {
+      height: 70%;
+      margin-left: 14rem;
+    }
+    .index-1 {
+      position: absolute;
+      z-index: -1;
+    }
+    .index2 {
+      position: absolute;
+      z-index: 2;
+    }
+  }
+}
+.cards-home {
+  &.moreApp {
+    display: flex;
+    margin: 0;
+    padding-top: 8rem;
+    justify-content: initial;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container-app {
+    .container-smartphone {
+      img {
+        margin-top: 130px;
+        height: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .container-app {
+    .container-smartphone {
+      img {
+        margin-top: 130px;
+        height: 40%;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .container-app {
+    grid-template-areas:
+      'text'
+      'img';
+    .container-text {
+      grid-area: 'img';
+    }
+    .container-smartphone {
+      grid-area: 'text';
+      img {
+        margin-top: 130px;
+        height: 30%;
+      }
+    }
+  }
+}

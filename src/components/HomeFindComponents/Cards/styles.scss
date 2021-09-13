@@ -1,0 +1,12 @@
+.cards-home {
+  display: flex;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+@media (max-width: 550px) {
+  .cards-home {
+    justify-content: initial;
+  }
+}

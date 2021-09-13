@@ -1,0 +1,59 @@
+@import '../../styles/fonts.scss';
+@import '../../styles/colors.scss';
+
+.container-HomeMore {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $backgroudBlue-primary;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+.container-img {
+  .img-HomeMore {
+    max-width: 350px;
+  }
+}
+.containerText {
+  padding: 20px;
+  .label-title {
+    color: $white;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-family: $fontKarla-primary;
+  }
+  .title {
+    font-family: $fontKarla-primary;
+    font-weight: 700;
+    color: $white;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.7rem;
+    line-height: 5rem;
+  }
+  .body {
+    font-family: $fontKarla-primary;
+    margin-top: 10px;
+    color: $colorGray-tertiary;
+    font-size: 1.3rem;
+  }
+  .btn-search {
+    background-color: $white;
+    font-family: $fontKarla-primary;
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 180px;
+    margin: 20px 0px;
+    color: $backgroudBlue-primary;
+    border-radius: 2px;
+    &:hover {
+      background-color: $colorGray-tertiary;
+    }
+  }
+}

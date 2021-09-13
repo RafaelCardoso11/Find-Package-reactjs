@@ -1,0 +1,33 @@
+.cards-home {
+  .card-home {
+    background-color: transparent;
+    box-shadow: 0px 0px 0px 0px;
+    width: 25rem;
+  }
+  .card-content {
+    align-items: flex-start;
+    margin: 40px 0px;
+    &.flex {
+      display: flex;
+    }
+    &.block {
+      display: block;
+      .iconCard {
+        margin-bottom: 10px;
+      }
+    }
+    .iconCard {
+      font-size: 2.3rem;
+      margin-right: 10px;
+      color: #258aff;
+    }
+    .title-card {
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+    .description-card {
+      margin-top: 5px;
+      color: #666666;
+    }
+  }
+}

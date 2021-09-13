@@ -1,0 +1,63 @@
+@import '../../../styles/fonts.scss';
+@import '../../../styles/colors.scss';
+.content-home{
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60rem;
+  text-align: center;
+  margin: 0 auto;
+  .label-title{
+    font-size: 1rem;
+    font-family: $fontKarla-primary;
+    letter-spacing: 1.3px;
+  }
+  .title-home{
+    max-width: 600px;
+    margin: 0px 2rem;
+    font-size: 4.6rem;
+    font-weight: 700;
+    font-family: $fontKarla-primary;
+  }
+  .body-home{
+    width: 50rem;
+    text-align: center;
+    font-family: $fontKarla-primary;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: $colorGray-primary;
+  }
+  .labelFooter-home{
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: $colorGray-primary;
+  }
+}
+.component-main-home{
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 40% 20%;
+  grid-auto-rows: 4rem;
+  justify-content: center;
+  width: 100%;
+  .input-findPackage{
+    background-color: $white;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 1.3rem;
+  }
+  .btn-search{
+    background-color: $backgroudBlue-primary;
+    color: white;
+    font-family: $fontKarla-primary;
+    font-size: 1.2rem;
+    &:hover{
+      background-color: $backgroudBlue-primary;
+    }
+  }
+
+}
+

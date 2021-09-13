@@ -1,0 +1,32 @@
+@import '../../styles/fonts.scss';
+@import '../../styles/colors.scss';
+
+.footerContainer {
+  background-color: $backgroudGray-primary;
+  display: grid;
+  grid-template-columns: 40% 50% 10%;
+  padding: 5rem;
+  .container-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+    .logo-correios {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+    .description-logo {
+      font-family: $fontKarla-primary;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      color: $colorGray-primary;
+    }
+    .socialNetwork {
+      margin-right: 10px;
+    }
+  }
+}
+.list-container {
+  display: flex;
+  justify-content: space-around;
+}
