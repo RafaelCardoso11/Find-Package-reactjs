@@ -3,10 +3,11 @@
   justify-content: center;
   max-width: 900px;
   margin: 0 auto;
-  flex-wrap: wrap;
 }
-@media (max-width: 550px) {
-  .cards-home {
-    justify-content: initial;
-  }
+#cardsHomeFind{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
 }

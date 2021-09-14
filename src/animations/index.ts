@@ -12,7 +12,7 @@ export const translateX = {
   show: { x: 1, opacity: 1 },
 };
 export const translateXX = {
-  hidden: { x: 50, opacity: 0 },
+  hidden: { x: 30, opacity: 0 },
   show: { x: 1, opacity: 1 },
 };
 export const translateY50 = {

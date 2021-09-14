@@ -1,34 +1,52 @@
 @import '../../styles/fonts.scss';
 @import '../../styles/colors.scss';
 
-.header-container{
+.header-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 90px;
-  .nav-header-content{
+  .nav-header-content {
     display: flex;
     align-items: center;
-    .logo-nav{
+    .logo-nav {
       width: 90px;
       height: 100%;
-      margin-bottom: 7px;
+      margin-bottom: 11px;
     }
-    .list-nav{
+    .list-nav {
       display: flex;
       align-items: center;
     }
   }
-  .btn-signIn{
+  .btn-signIn {
     padding: 0.5rem 3rem;
     border: 2.5px solid $backgroudBlue-primary;
     color: $backgroudBlue-primary;
     border-radius: 3px;
     cursor: pointer;
-    &:hover{
+    &:hover {
       transition: 200ms;
       background-color: $backgroudBlue-primary;
       color: $white;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .header-container {
+    padding: 0px 10px;
+    justify-content: space-between;
+    .nav-header-content {
+      display: flex;
+      align-items: center;
+      .logo-nav {
+        width: 90px;
+        height: 100%;
+        margin-bottom: 11px;
+      }
+      .list-nav {
+        display: none;
+      }
     }
   }
 }

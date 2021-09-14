@@ -7,7 +7,7 @@ import { HomeSign } from '../../templates/HomeSignIn';
 import { motion } from 'framer-motion';
 import { headerAnimation } from '../../animations';
 import { useScroll } from '../../Hooks/useScroll';
-
+import { HeaderMobile } from './HeaderMobile';
 export const Header = (): JSX.Element => {
   const [open, setOpen] = useState(false);
   const [element, controls] = useScroll();
@@ -20,30 +20,38 @@ export const Header = (): JSX.Element => {
   };
 
   return (
-    <motion.div
-      variants={headerAnimation}
-      animate={controls}
-      ref={element}
-      initial={{ y: -50, opacity: 0 }}
-      transition={{ delay: 0.1, type: 'spring', stiffness: 100 }}
-    >
-      <Box className="header-container" component="header">
-        <List className="nav-header-content" component="nav">
-          <ListItemIcon>
-            <img className="logo-nav" src={logo} alt="Logo" />
-          </ListItemIcon>
-          <List className="list-nav" component="ul">
-            <ItemListNav item="Features" />
-            <ItemListNav item="Services" />
-            <ItemListNav item="Pricing" />
-            <ItemListNav item="Contact" />
+    <>
+      <motion.div
+        variants={headerAnimation}
+        animate={controls}
+        ref={element}
+        initial={{ y: -50, opacity: 0 }}
+        transition={{ delay: 0.1, type: 'spring', stiffness: 100 }}
+        id="back-to-top-anchor"
+      >
+        <Box className="header-container" component="header">
+          <List className="nav-header-content" component="nav">
+            <ListItemIcon>
+              <img className="logo-nav" src={logo} alt="Logo" />
+            </ListItemIcon>
+            <List className="list-nav" component="ul">
+              <ItemListNav item="Features" />
+              <ItemListNav item="Services" />
+              <ItemListNav item="Pricing" />
+              <ItemListNav item="Contact" />
+            </List>
           </List>
-        </List>
-        <Button className="btn-signIn" onClick={handleOpen}>
-          Sign In
-        </Button>
-      </Box>
-      <HomeSign handleClose={handleClose} handleOpen={handleOpen} open={open} />
-    </motion.div>
+          <Button className="btn-signIn" onClick={handleOpen}>
+            Sign In
+          </Button>
+        </Box>
+        <HomeSign
+          handleClose={handleClose}
+          handleOpen={handleOpen}
+          open={open}
+        />
+      </motion.div>
+      <HeaderMobile />
+    </>
   );
 };

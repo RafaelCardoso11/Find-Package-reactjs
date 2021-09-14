@@ -1,0 +1,10 @@
+@import '../../styles/colors.scss';
+.contentToScroll {
+  position: fixed;
+  bottom: 30px;
+  right: 70px;
+  #btnToScroll {
+    background-color: $backgroudBlue-primary;
+    color: white;
+  }
+}

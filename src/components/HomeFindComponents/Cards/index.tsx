@@ -12,7 +12,7 @@ import { useScroll } from '../../../Hooks/useScroll';
 export const CardsHomeFind = (): JSX.Element => {
   const [element, controls] = useScroll();
   return (
-    <Box className="cards-home" style={{ padding: '6px' }}>
+    <Box className="cards-home" style={{ padding: '6px' }} id="cardsHomeFind">
       <motion.div
         ref={element}
         variants={translateYY50}
